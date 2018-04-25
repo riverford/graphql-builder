@@ -1,5 +1,5 @@
-(defproject riverford/graphql-builder "0.1.5"
-  :description "A Clojure(Script) library designed to help with the consuming of GraphQL APIs."
+(defproject riverford/graphql-builder "0.1.5-1"
+  :description "A fork of graphql-builder to work with reagent 0.8 and react native"
   :url "https://github.com/retro/graphql-builder"
   :license {:name "MIT"
             :url "https://opensource.org/licenses/MIT"}
