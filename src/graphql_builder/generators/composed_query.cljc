@@ -1,6 +1,5 @@
 (ns graphql-builder.generators.composed-query
-  (:require [cuerdas.core :refer [pascal]]
-            [graphql-builder.generators.operation :refer [generate-for-composition]]
+  (:require [graphql-builder.generators.operation :refer [generate-for-composition]]
             [graphql-builder.util :as util]
             [clojure.string :as str]))
 
@@ -14,7 +13,7 @@
 
 (defn make-prefixes [queries]
   (reduce (fn [acc query-key]
-            (assoc acc query-key (pascal (name query-key)))) {} (keys queries)))
+            (assoc acc query-key (name query-key))) {} (keys queries)))
 
 (defn make-query-nodes [nodes queries]
   (reduce (fn [acc [query-key name]]
